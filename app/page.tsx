@@ -8,15 +8,30 @@ export default function Home() {
         <button className="text-lg text-neutral-500 py-5">Friends</button>
         <button className="text-lg text-neutral-500 py-5">Tasks</button>
         <button className="text-lg text-neutral-500 py-5">Events</button>
-        <button className="text-lg text-neutral-500 py-5">About Fasilkom/UI</button>
-        <button className="text-lg text-neutral-500 py-5">Welcome, Muhammad Vito Secona</button>
+        <button className="text-lg text-neutral-500 py-5">
+          About Fasilkom/UI
+        </button>
+        <button className="text-lg text-neutral-500 py-5">
+          Welcome, Muhammad Vito Secona
+        </button>
       </nav>
       <div className="mt-32 flex flex-col items-center gap-10">
-        <div>
+        <div className="flex items-center gap-10">
+          <Image
+            src="/pfp.jpg"
+            objectFit="fill"
+            width={200}
+            height={200}
+            className="rounded-full aspect-square"
+            alt="pfp"
+          />
           <div>
             <h1 className="text-3xl font-bold">Muhammad Vito Secona</h1>
             <p>Class of 2023</p>
           </div>
+          <button className="text-blue-600 border-blue-600 border-2 py-3 px-5 rounded-md font-semibold">
+            Edit Profile
+          </button>
         </div>
         <div className="flex flex-col gap-5">
           <div className="inline-grid grid-cols-2 gap-x-10 gap-y-5">
